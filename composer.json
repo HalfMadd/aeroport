@@ -20,7 +20,10 @@
         "incenteev/composer-parameter-handler": "^2.0",
         "sensio/distribution-bundle": "^5.0.19",
         "sensio/framework-extra-bundle": "^5.0.0",
+        "stoutlogic/acf-builder": "^1.8",
+        "symfony/console": "^3.4",
         "symfony/monolog-bundle": "^3.1.0",
+        "symfony/orm-pack": "^1.0",
         "symfony/polyfill-apcu": "^1.0",
         "symfony/swiftmailer-bundle": "^2.6.4",
         "symfony/symfony": "3.4.*",
@@ -28,7 +31,9 @@
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
-        "symfony/phpunit-bridge": "^3.0"
+        "symfony/maker-bundle": "^1.13",
+        "symfony/phpunit-bridge": "^3.0",
+        "symfony/web-server-bundle": "^3.4"
     },
     "scripts": {
         "symfony-scripts": [
@@ -47,9 +52,6 @@
         ]
     },
     "config": {
-        "platform": {
-            "php": "5.6"
-        },
         "sort-packages": true
     },
     "extra": {
