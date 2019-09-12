@@ -4,7 +4,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("plane.jpg");
+  background-image: url("../img/plane.jpg");
 
   /* Full height */
   height: 100%;
@@ -50,7 +50,7 @@ div.homeOptions{
 }
 
 p.temp{
-	content:url(thermo.png);
+	content:url(../img/thermo.png);
 	width: 60px;
 	display: block;
 	margin-left: auto;
@@ -59,7 +59,7 @@ p.temp{
 }
 
 p.periode{
-	content:url(calender.png);
+	content:url(../img/calender.png);
 	width: 60px;
 	display: block;
 	margin-left: auto;
