@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Voyage Hitema</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="thermometer.css">
+  <link rel="stylesheet" href="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jqueryui.min.css">
+  <link rel="stylesheet" href="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jquery-ui-slider-pips.min.css">
+  <link rel="stylesheet" href="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/app.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/js/jquery-plus-ui.min.js"></script>
+  <script src="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/js/jquery-ui-slider-pips.js"></script>
+
+</head>
+<body>
+<div class="bg">
+	<div class="title">
+		Inspiration pour les voyages!
+	</div>
+	<div class="homeOptions">
+
+	<div class="oneline" data-toggle="modal" data-target="#myModal">
+		<p class="textTitle">La température</p>
+		<p class="temp"></p>
+	</div>
+
+	<div class="oneline" data-toggle="modal" data-target="#myModal2">
+		<p class="textTitle">La période</p>
+		<p class="periode"></p>
+	</div>	
+
+	</div>
+
+	<div class="buttonSend">
+		<button style="padding: 15px!important; background-color: white!important;" class="sendButton">Lancer la recherche</button>
+	</div>
+
+
+	<div class="result" style="display: none;">
+		<h2 class="titleH2">Resultats</h2>
+		<p style="font-size: 16px; font-weight: bold; color: black;">Nom place</p>
+		<p style="font-size: 16px; font-weight: bold; color: black;">Prix</p>
+
+		<img src="b.jpeg" width="200px"> <br><br>
+		<p style="margin-left: 15%; margin-right: 15%; font-size: 12px; font-weight: bold; color: black;">Blajhzvf f zef zefjhzef zefbjkzef zefhjze fzejfvze fzjhfvze,n fzhfvz efzevfkjhzevf z zefjhvzefn zfjzekfj ez zz zed ze d ze dze </p>
+
+	</div>
+		
+</div>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+
+         	<div class="stuff">
+			    <main>
+			        <div id="flat-slider"></div>
+			        <input type="text" id="amount" placeholder="10°C - 20°C" readonly style="border:0; color:darkgrey; font-weight:bold;">
+			    </main>
+			</div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+    <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+
+         	<div class="month-picker">
+			  <a href="#" class="month-picker-nav" title="Not implemented">&lt;</a>
+			  <fieldset class="month-picker-fieldset">
+			    <input type="radio" name="month" value="jan" id="jan">
+			    <label for="jan" class="month-picker-label">Jan</label>
+			    <input type="radio" name="month" value="feb" id="feb">
+			    <label for="feb" class="month-picker-label">Feb</label>
+			    <input type="radio" name="month" value="mar" id="mar">
+			    <label for="mar" class="month-picker-label">Mar</label>
+			    <input type="radio" name="month" value="apr" id="apr">
+			    <label for="apr" class="month-picker-label">Apr</label>
+			    <input type="radio" name="month" value="may" id="may">
+			    <label for="may" class="month-picker-label">May</label>
+			    <input type="radio" name="month" value="jun" id="jun">
+			    <label for="jun" class="month-picker-label">Jun</label>
+			    <input type="radio" name="month" value="jul" id="jul">
+			    <label for="jul" class="month-picker-label">Jul</label>
+			    <input type="radio" name="month" value="aug" id="aug">
+			    <label for="aug" class="month-picker-label">Aug</label>
+			    <input type="radio" name="month" value="sep" id="sep" checked>
+			    <label for="sep" class="month-picker-label">Sep</label>
+			    <input type="radio" name="month" value="oct" id="oct">
+			    <label for="oct" class="month-picker-label">Oct</label>
+			    <input type="radio" name="month" value="nov" id="nov">
+			    <label for="nov" class="month-picker-label">Nov</label>
+			    <input type="radio" name="month" value="dec" id="dec">
+			    <label for="dec" class="month-picker-label">Dec</label>
+			  </fieldset>
+			</div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+<script src="thermometer.js"></script>
+<script type="text/javascript">
+	$(".sendButton").on('click', function(event){
+		event.stopPropagation();
+		event.stopImmediatePropagation();
+		//alert("hb");
+		$(".result").toggle();
+	});
+</script>
+</body>
+</html>
+
