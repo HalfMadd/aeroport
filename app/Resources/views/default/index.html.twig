@@ -117,12 +117,17 @@
 
     <script src="thermometer.js"></script>
     <script type="text/javascript">
-      $(".sendButton").on('click', function(event){
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        //alert("hb");
-        $(".result").toggle();
-      });
+    $(".sendButton").on('click', function(event){
+		event.stopPropagation();
+		event.stopImmediatePropagation();
+		//alert("hb");
+		//$(".result").toggle();
+		let thermometer = $('#amount').val();
+		let thermoterValues = thermometer.replace(/°C/g, '').replace(/\s/g, '').split('-');
+		
+		let month = $('[name="month"]:checked').val();
+		console.log(thermoterValues, month);
+	});
     </script>
     </body>
     </html>
