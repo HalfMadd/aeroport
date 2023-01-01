@@ -4,7 +4,7 @@
     "watch": "webpack --watch"
   },
   "devDependencies": {
-    "webpack": "^4.39.3"
+    "webpack": "^5.75.0"
   },
   "name": "aeroport",
   "description": "Symfony Standard Edition",
